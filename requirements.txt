@@ -1,6 +1,16 @@
+asgiref==3.3.1
+certifi==2020.12.5
+chardet==3.0.4
 Django==3.0.3
 django-bootstrap-modal-forms==1.5.0
 django-crispy-forms==1.8.1
+django-debug-toolbar==3.2
+django-model-utils==4.1.1
 django-simple-gravatar==1.0.1
 django-widget-tweaks==1.4.5
+idna==2.8
+psycopg2==2.8.6
+pytz==2020.5
 requests==2.22.0
+sqlparse==0.4.1
+urllib3==1.25.11
