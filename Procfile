@@ -1,1 +1,1 @@
-web: gunicorn saudipolish.config.settings.wsgi
+web: gunicorn BST.wsgi
