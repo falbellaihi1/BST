@@ -53,6 +53,7 @@ wheels/
 pip-log.txt 
 pip-delete-this-directory.txt 
 .env
+/staticfiles
 # Unit test / coverage reports 
 htmlcov/ 
 .tox/ 
