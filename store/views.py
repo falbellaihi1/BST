@@ -31,12 +31,13 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponse
 # Create your views here.
-
+@login_required
 def home(request):
 	template_name = "index.html"
 	customers_count = Customer.objects.all().count()
 	context = {"count": customers_count}
 	return render (request, template_name , context)
+@login_required
 def data(request):
 	template_name = "base.html"
 	context = {'customer':Customer.objects.all().count()}
