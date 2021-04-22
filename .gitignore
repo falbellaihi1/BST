@@ -138,6 +138,6 @@ build/
 tcl/
 Scripts/
 include/
-**/migrations/*
+#**/migrations/*
 tests/report/
 
