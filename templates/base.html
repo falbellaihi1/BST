@@ -120,7 +120,9 @@
       {% endblock header %}
       <!--header end-->
       <!--sidebar start-->
+  {% if user.is_authenticated %}
       {% block sidemenu %}
+
         <script src="{% static "js/expanded.js" %}"></script>
         <aside>
           <div id="sidebar" class="nav-collapse " >
@@ -261,13 +263,15 @@
             </div>
             <!--/.row-->
             <div class="row">
+
             {% endblock maincontent %}
-            
+
             
             <!-- Includes -->
             {% include "_modalheader.html" %}
             {% block content %}
             {% endblock content %}
+      {% endif %}
             <!-- Includes -->
             {% include "_modalfooter.html" %}
           </div>
